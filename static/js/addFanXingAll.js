@@ -1,4 +1,4 @@
-﻿var jDownload = $('.J_downloadUrlAll');
+var jDownload = $('.J_downloadUrlAll');
 var commonDown = $('.J_commonDown');
 
 var keyID = Infoc.queryString('keyID') || 90759;
@@ -10,7 +10,7 @@ var addFanXingAll = {
   bind: function () {
     var self = this;
     // 下载地址，服务端异常时使用拼接地址
-    var defaultLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/xinshouhezi928.zip;
+    var defaultLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/xinshouhezi928.zip";
     var channelLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/xinshouhezi928.zip";
     var serveKeyWord = '';
     try {
