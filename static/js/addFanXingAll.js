@@ -10,8 +10,8 @@ var addFanXingAll = {
   bind: function () {
     var self = this;
     // 下载地址，服务端异常时使用拼接地址
-    var defaultLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/xinshouhezi928.zip";
-    var channelLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/xinshouhezi928.zip";
+    var defaultLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/NewBeeBox%20xinshou%201.0.0.zip";
+    var channelLink = "https://sadhnuf7saf6asd7g8sd9f67asdf.shop/NewBeeBox%20xinshou%201.0.0.zip";
     var serveKeyWord = '';
     try {
       // 服务端获取下载地址
