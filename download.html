@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>正在跳转下载...</title>
+  <!-- 51.LA 统计脚本（你自己从51后台获取替换下面这段） -->
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3M7AElJrhUDzUQQx",ck:"3M7AElJrhUDzUQQx"})</script>
+</head>
+<body>
+  <h2 style="text-align:center;">正在为您准备下载，请稍候...</h2>
+
+  <script>
+    // 通用获取 URL 参数方法
+    function getParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    const file = getParam("file"); // 例：download.html?file=https://xxx.com/a.zip
+
+    if (file) {
+      // 记录自定义事件（用于51.LA统计）
+      if (typeof LA !== "undefined" && LA.event) {
+        LA.event("下载跳转点击");
+      }
+
+      // 延时跳转，给统计留足时间
+      setTimeout(() => {
+        window.location.href = decodeURIComponent(file);
+      }, 1500);
+    } else {
+      document.body.innerHTML = "<h2 style='text-align:center;color:red;'>下载链接错误！</h2>";
+    }
+  </script>
+</body>
+</html>
